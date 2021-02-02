@@ -45,6 +45,38 @@ const Sex BaseStudent::get_sex() const {
 	return sex;
 }
 
+bool operator==(const BaseStudent &a, const BaseStudent &b){
+	return a.get_id() == b.get_id() && a.get_name() == b.get_name();
+}
+
+bool operator!=(const BaseStudent &a, const BaseStudent &b) {
+	return a.get_id() != b.get_id() && a.get_name() != a.get_name();
+}
+
+bool operator>(const BaseStudent &a, const BaseStudent &b) {
+	return a.get_name() > b.get_name();
+}
+
+bool operator<(const BaseStudent &a, const BaseStudent &b) {
+	return a.get_name() < b.get_name();
+}
+
+std::istream& operator>>(std::istream& in, BaseStudent &b) {
+	
+}
+
+std::ostream& operator<<(std::ostream& out, const BaseStudent &b){
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

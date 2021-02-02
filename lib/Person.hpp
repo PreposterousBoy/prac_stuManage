@@ -3,6 +3,7 @@
 
 #include<string>
 #include<vector>
+#include<iostream>
 
 
 enum class Sex { Femal, Male, Unkown};
@@ -43,7 +44,15 @@ private:
 
 };
 
-bool operator==(BaseStudent &a, BaseStudent &b);
+bool operator==(const BaseStudent &a, const BaseStudent &b);
+bool operator!=(const BaseStudent &a, const BaseStudent &b);
+bool operator>(const BaseStudent &a, const BaseStudent &b);
+bool operator<(const BaseStudent &a, const BaseStudent &b);
+std::istream& operator>>(std::istream &in, BaseStudent &b);
+std::ostream& operator<<(std::istream &out, const BaseStudent &b);
+
+
+
 
 class Student: public BaseStudent{
 public:
