@@ -1,0 +1,2 @@
+/usr/bin/ar qc libio.a CMakeFiles/io.dir/IO.cpp.o CMakeFiles/io.dir/Person.cpp.o CMakeFiles/io.dir/Students.cpp.o CMakeFiles/io.dir/errorModel.cpp.o
+/usr/bin/ranlib libio.a

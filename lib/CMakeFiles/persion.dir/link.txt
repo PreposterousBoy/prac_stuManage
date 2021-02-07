@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpersion.a CMakeFiles/persion.dir/IO.cpp.o CMakeFiles/persion.dir/Person.cpp.o CMakeFiles/persion.dir/Students.cpp.o CMakeFiles/persion.dir/errorModel.cpp.o
+/usr/bin/ranlib libpersion.a
