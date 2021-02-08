@@ -18,16 +18,15 @@ struct buff {
 class IOstream{
 public:
 	IOstream() = default;
-	IOstream(std::string& filename);
+	IOstream(std::string& filename):file(filename) {}
 	
-	virtual BaseStudent getPerson();
+	//virtual BaseStudent getPerson();
 	virtual IOstream& readAll(Students& database);
 	virtual IOstream& writeOut(const BaseStudent& out);
 	virtual IOstream& wirteAll(Students& database);
 
 private:
 	std::fstream file;
-	std::ofstream ofile;
 	std::shared_ptr<BaseStudent> ptr_stu;
 	
 	

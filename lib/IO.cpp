@@ -5,16 +5,19 @@
 
 #include"Person.hpp"
 #include"IO.hpp"
-
+/*
 BaseStudent IOstream::getPerson() {
 	std::string tmp_string;
-	BaseStudent tmp;
 	if(!file.is_open()) {
 		// to do
+		return tmp;
 	}
+	BaseStudent tmp(
+
 
 	
 }
+*/
 
 Sex recog_sex(int x) { 
 	switch(x){
@@ -38,7 +41,7 @@ IOstream& IOstream::readAll(Students& database) {
 	}
 	while( file>>buffer.name>>buffer.id>>buffer.email>>buffer.phone>>buffer.adrr>>buffer.sex>>buffer.year){
 		BaseStudent tmp(buffer.name,buffer.id);
-		tmp.set_email(buffer.email).set_phone(buffer.phone).set_years(buffer.year).set_Sex( recog_sex(buffer.sex));
+		tmp.set_email(buffer.email).set_phone(buffer.phone).set_years(buffer.year).set_Sex( recog_sex(buffer.sex)).set_addr(buffer.adrr);
 		database.add_back(tmp);
 	}
 

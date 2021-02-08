@@ -21,16 +21,12 @@ BaseStudent Students::pop_front() {
 	stu.pop_front();
 	return tmp;
 }
-
-int Students::remove_of(const BaseStudent &pp){
+/*
+Students& Students::removeOf(const BaseStudent &pp){
 	stu.remove(pp);
-	return 1;
+	return *this;
 }
 
-int Students::remove_of(const BaseStudent &&pp){
-	stu.remove(pp);
-	return 1;
-}
 
 const BaseStudent& Students::find(std::string nname){
 	auto tmp = std::find(stu.cbegin(), stu.cend(), BaseStudent(nname));
@@ -38,12 +34,22 @@ const BaseStudent& Students::find(std::string nname){
 }
 
 const BaseStudent& Students::find(std::string id, int iid){
-	auto tmp = std::find_if(stu.cbegin(), stu.cend(), [&iid](auto &a){ return !( a != iid); } );
+	BaseStudent comp_tmp(id,1);
+	auto tmp = std::find_if(stu.cbegin(), stu.cend(), [&comp_tmp](auto &a){ return !( a != comp_tmp); } );
 	return *tmp;
 }
 
 std::list<BaseStudent>::const_iterator Students::find(const BaseStudent &&pp){
 	return std::find(stu.cbegin(), stu.cend(), pp);
+}
+*/
+
+std::list<BaseStudent>::const_iterator Students::getBegain() const {
+	return stu.cbegin();
+}
+
+std::list<BaseStudent>::const_iterator Students::getEnd() const {
+	return stu.cend();
 }
 
 bool Students::is_empty() const  {

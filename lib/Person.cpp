@@ -22,6 +22,11 @@ const std::string BaseStudent::get_phone() const {
 	return phone;
 }
 
+inline 
+const std::string BaseStudent::get_addr() const {
+	return addr;
+}
+
 inline
 const std::string BaseStudent::get_email() const {
 	return email;
@@ -98,13 +103,15 @@ bool operator<(const BaseStudent &a, const BaseStudent &b) {
 	
 
 std::ostream& operator<<(std::ostream& out, const BaseStudent &b){
-	out<<"Name"<<std::setw(10)<<b.get_name()<<std::endl;
-	out<<"ID"<<std::setw(10)<<b.get_id()<<std::endl;
-	out<<"Sex"<<std::setw(10)<<b.get_sex()<<std::endl;
-	out<<"YEAR"<<std::setw(10)<<b.get_years()<<std::endl;
-	out<<"Phone"<<std::setw(10)<<b.get_phone()<<std::endl;
-	out<<"Email"<<std::setw(10)<<b.get_email()<<std::endl;
-	return out<<"Address"<<std::setw(10)<<b.get_addr()<<std::endl;
+	int space = 5;
+	int space1 = 10;
+	out<<std::right<<std::setw(space1)<<"Name"<<std::left<<std::setw(space)<<b.get_name()<<std::endl;
+	out<<std::right<<std::setw(space1)<<"ID"<<std::left<<std::setw(space)<<b.get_id()<<std::endl;
+	out<<std::right<<std::setw(space1)<<"Sex"<<std::left<<std::setw(space)<<b.get_sex()<<std::endl;
+	out<<std::right<<std::setw(space1)<<"YEAR"<<std::left<<std::setw(space)<<b.get_years()<<std::endl;
+	out<<std::right<<std::setw(space1)<<"Phone"<<std::left<<std::setw(space)<<b.get_phone()<<std::endl;
+	out<<std::right<<std::setw(space1)<<"Email"<<std::left<<std::setw(space)<<b.get_email()<<std::endl;
+	return out<<std::right<<std::setw(space1)<<"Address"<<std::left<<std::setw(space)<<b.get_addr()<<std::endl;
 	
 }
 

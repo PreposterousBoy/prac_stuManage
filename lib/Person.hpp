@@ -56,7 +56,7 @@ bool operator!=(const BaseStudent &a, const BaseStudent &b);
 bool operator>(const BaseStudent &a, const BaseStudent &b);
 bool operator<(const BaseStudent &a, const BaseStudent &b);
 std::istream& operator>>(std::istream &in, BaseStudent &b);
-std::ostream& operator<<(std::istream &out, const BaseStudent &b);
+std::ostream& operator<<(std::ostream &out, const BaseStudent &b);
 
 
 
