@@ -16,11 +16,11 @@ public:
 	virtual Students& add_back(BaseStudent pp);
 	virtual BaseStudent pop_back();
 	virtual BaseStudent pop_front();
-	/*
+
 	virtual Students& removeOf(const BaseStudent &pp);
 	virtual const BaseStudent & find( std::string nname);
 	virtual const BaseStudent & find(std::string id, int iid);
-	virtual std::list<BaseStudent>::const_iterator find(const BaseStudent &&pp);*/
+	virtual std::list<BaseStudent>::const_iterator find(const BaseStudent &&pp);
 
 	std::list<BaseStudent>::const_iterator getBegain() const;
 	std::list<BaseStudent>::const_iterator getEnd() const;

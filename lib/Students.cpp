@@ -21,7 +21,10 @@ BaseStudent Students::pop_front() {
 	stu.pop_front();
 	return tmp;
 }
-/*
+
+
+
+// 这几个函数老是编译链接时发生了undefine ref to 
 Students& Students::removeOf(const BaseStudent &pp){
 	stu.remove(pp);
 	return *this;
@@ -42,7 +45,6 @@ const BaseStudent& Students::find(std::string id, int iid){
 std::list<BaseStudent>::const_iterator Students::find(const BaseStudent &&pp){
 	return std::find(stu.cbegin(), stu.cend(), pp);
 }
-*/
 
 std::list<BaseStudent>::const_iterator Students::getBegain() const {
 	return stu.cbegin();
