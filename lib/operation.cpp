@@ -9,8 +9,10 @@ int SignOption::Execute() {
 	if(std::cin>>name) {
 		throw ;
 	}
-	catch {
-
+	catch eception {
+		
 	}
+
+	if( IdentifyUser(
 	return 9;
 }
