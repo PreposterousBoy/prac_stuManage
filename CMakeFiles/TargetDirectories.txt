@@ -1,8 +1,6 @@
 /home/lliir/Desktop/prac_stuManage/CMakeFiles/rebuild_cache.dir
 /home/lliir/Desktop/prac_stuManage/CMakeFiles/edit_cache.dir
 /home/lliir/Desktop/prac_stuManage/CMakeFiles/demo.dir
-/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/rebuild_cache.dir
-/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/io.dir
-/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/students.dir
 /home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/edit_cache.dir
-/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/persion.dir
+/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/rebuild_cache.dir
+/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/all_stu.dir

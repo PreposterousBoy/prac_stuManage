@@ -4,4 +4,4 @@ aux_source_directory(. DIR_SRCS)
 add_subdirectory(lib)
 
 add_executable(demo main.cpp)
-target_link_libraries(demo persion students io)
+target_link_libraries(demo all_stu)

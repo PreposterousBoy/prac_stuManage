@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="stu_manage_sys"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo">
+				<Option output="/home/lliir/Desktop/prac_stuManage/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 demo"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo/fast">
+				<Option output="/home/lliir/Desktop/prac_stuManage/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 demo/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_stu">
+				<Option output="/home/lliir/Desktop/prac_stuManage/lib/liball_stu.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 all_stu"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_stu/fast">
+				<Option output="/home/lliir/Desktop/prac_stuManage/lib/liball_stu.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lliir/Desktop/prac_stuManage/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 all_stu/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lliir/Desktop/prac_stuManage/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/IO.cpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/IO.hpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/Person.cpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/Person.hpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/Students.cpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/Students.hpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/errorModel.cpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/errorModel.hpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/help.cpp">
+			<Option target="all_stu"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/main.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lliir/Desktop/prac_stuManage/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

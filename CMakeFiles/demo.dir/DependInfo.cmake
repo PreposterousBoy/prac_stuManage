@@ -14,9 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/persion.dir/DependInfo.cmake"
-  "/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/students.dir/DependInfo.cmake"
-  "/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/io.dir/DependInfo.cmake"
+  "/home/lliir/Desktop/prac_stuManage/lib/CMakeFiles/all_stu.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
