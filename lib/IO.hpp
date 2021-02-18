@@ -9,6 +9,9 @@
 #include"Person.hpp"
 #include"Students.hpp"
 
+
+
+namespace stuSys{
 struct buff {
 	std::string name,id, email, adrr, phone;
 	int sex;
@@ -32,6 +35,6 @@ private:
 	
 
 };
-
+};
 #endif /* _IO_HPP */
 
