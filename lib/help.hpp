@@ -19,9 +19,9 @@ class BaseOption;
 class Entry {
 
 public:
-	static Entry& GetEntry(EntryOption& op);
+	static Entry& GetEntry();
 	
-	Entry& Display(EntryOption& eop);
+	Entry& Display();
 	
 	void PickOne();
 

@@ -14,14 +14,14 @@
 
 
 
-Entry& Entry::GetEntry(EntryOption& op){
+Entry& Entry::GetEntry(){
 	static Entry entricen;
 	allOp = std::make_unique<EntryOption>();
 	return entricen;
 }
 
-Entry& Entry::Display(EntryOption& eop) {
-	eop.DisplayOption();
+Entry& Entry::Display() {
+	allOp->DisplayOption();
 	return *this;
 }
 
@@ -30,11 +30,6 @@ void PickOne() {
 }
 
 
-void EntryOption::Init() {
-	e_opt.push_back(SearchOption());
-	e_opt.push_back(SignOption());
-	e_opt.push_back(InformationOption());
-}
 /**
  * class Option
  *
@@ -51,6 +46,15 @@ int BaseOption::Execute() {
  * Class EntryOption
  *
  */
+
+void EntryOption::Init() {
+	e_opt.push_back(SearchOption());
+	e_opt.push_back(SignOption());
+	e_opt.push_back(InformationOption());
+}
+
+
+
 EntryOption::EntryOption() {
 	Init();
 }
