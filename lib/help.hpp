@@ -1,9 +1,15 @@
 #ifndef __HELP_CPP
 #define __HELP_CPP
+#include<vector>
+#include<string>
+#include<memory>
+#include"operation.hpp"
+
+
 
 class Entry;
 class EntryOption;
-class Option;
+class BaseOption;
 
 
 /**
@@ -14,34 +20,38 @@ class Entry {
 
 public:
 	static Entry& GetEntry(EntryOption& op);
-
+	
 	Entry& Display(EntryOption& eop);
+	
+	void PickOne();
+
 
 private:
 	Entry() = default;
-	Entry(const Entry& en);
+	Entry(const Entry& en) = delete;
 	Entry(const EntryOption& eop);
+
+	static std::unique_ptr<EntryOption> allOp;
+
 };
-
-
-class BaseOption{
-public:
-	BaseOption() = default;
-	virtual int Execute();
-
-
-	virtual ~BaseOption();
-};
-
 
 
 class EntryOption {
 public:
-	EntryOption() = default;
+	EntryOption();
 	virtual ~EntryOption();
 
-	virtual EntryOption& GetOption();
+	virtual EntryOption& DisplayOption();
 	virtual EntryOption& AccessOption(BaseOption& op);
+	virtual EntryOption& AccessOption(int op);
+
+private:
+
+	virtual void Init();
+
+
+	std::vector<BaseOption> e_opt;
+
 
 };
 
